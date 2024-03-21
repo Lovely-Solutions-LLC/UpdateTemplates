@@ -1,0 +1,33 @@
+.info-container {
+  position: relative;
+}
+
+.info-icon {
+  color: var(--txt);
+}
+
+.info-text-container {
+  position: absolute;
+  top: 120%;
+  left: 50%;
+  translate: -50%;
+  background-color: var(--bg-sec);
+  border-radius: 0.5em;
+  padding: 0.5em;
+  border: thin solid var(--border);
+  z-index: 100;
+
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.3s ease-in-out;
+}
+
+.info-text {
+  min-width: 120px;
+  color: var(--txt);
+}
+
+.info-icon:hover + .info-text-container {
+  opacity: 1;
+  pointer-events: all;
+}

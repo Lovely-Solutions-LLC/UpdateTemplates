@@ -1,0 +1,31 @@
+.template {
+  display: flex;
+  justify-content: space-between;
+  gap: 2em;
+  padding: 1em;
+  border: thin solid var(--border);
+  border-radius: 0.5em;
+}
+
+.icon-container {
+  display: flex;
+  gap: 1.5em;
+  align-items: center;
+}
+
+.icon {
+  font-size: 1.2em;
+  color: var(--txt)
+}
+
+.copy:hover {
+  cursor: pointer;
+  color: #0f0;
+  transition: 0.3s ease-in-out;
+}
+
+.delete:hover {
+  cursor: pointer;
+  color: #f00;
+  transition: 0.3s ease-in-out;
+}
