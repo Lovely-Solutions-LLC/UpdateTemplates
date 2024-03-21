@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build && zip -r build.zip ./dist",
+    "build": "tsc && vite build",
+    "zip": "tsc && vite build && zip -r build.zip ./dist",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
